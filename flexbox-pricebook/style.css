@@ -1,0 +1,145 @@
+*{
+   padding: 0px;
+   margin:0px;
+
+}
+.contenedorglobal{
+
+width:auto;
+height:auto;
+background-color:cyan;
+display: flex;
+flex-flow: column wrap;
+
+
+
+}
+
+#barra{
+ 
+ width:auto;
+ height:50px;
+ background-color:orange;
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+#contenedorlogo{
+ width: 900px;
+ height: auto;
+ background-color: red;
+ display: flex;
+ flex-flow: row nowrap;
+ justify-content: space-between;
+ font-size: 30px;
+}
+
+.logo{
+ 
+ width: auto;
+
+
+
+}
+
+#contenedoropcionlogin{
+
+width:auto;
+
+
+}
+
+#contenedorinfo{
+ 
+ width: 900px;
+ height:800px;
+ background-color: darkblue;
+ align-self: center;
+
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content:space-between;
+ align-content: flex-start; 
+ margin-top:5px;
+
+}
+
+.caja{
+ 
+ width: 200px;
+ height:200px;
+ margin-right: 10px;
+ margin-bottom: 15px;
+}
+
+#caja1{
+	background-color: yellow;
+
+}
+
+#caja2{
+  
+   background-color:green;
+
+}
+
+#caja3{
+
+	background-color:cadetblue;
+}
+
+#caja4{
+
+	background-color: chartreuse;
+}
+
+#caja5{
+
+	background-color: crimson;
+}
+
+
+@media screen and (max-width: 976px)
+{ 
+
+	#contenedorinfo{
+      
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: pink;
+
+
+	}
+
+
+
+}
+
+@media screen and (max-width: 623px)
+{ 
+
+	#contenedorinfo{
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      background-color: darkgoldenrod ;
+
+
+	}
+
+	.caja{
+		width:300px;
+	}
+
+
+
+}

@@ -1,0 +1,161 @@
+#contenedor{
+ 
+ display: flex;
+ flex-direction: row;    /* row  column  row-reverse   column-reverse */
+ flex-wrap: nowrap;    /* no-wrap  que no respeta el ancho de una caja dentro de un contenedor    wrap    wrap-reverse */
+ /* flex-flow: column wrap; */
+ justify-content: space-between;   /* flex-start   flex-end  center   space-around  space-between  */     
+ /* flex-end solo para cuando hay un solo elemento en fila   pero cuando hay dos elementos en una fila la solucion es space-between */
+
+ align-items:;  /* flex-start   flex-end  center  stretch  baseline */
+
+    /*para usar  stretch   los elementos dentro de un contenedor cada uno debe tener un height auto */
+    /* para usar baseline cuando aumenta el tamaño de letra font-size dentro de un elemento dentro del contenedor principal baseline los alinea */
+ 
+ /* PARA CENTRAR 
+  
+  justify-content: center;
+  align-items: center ;
+ */
+
+ /*con align-items se centran los 4 o x elementos de acuerdo al tamaño del contenedor y se distribuye su espacion si usamos flex-wrap: wrap  
+   entonces la mejor forma de centrar los 4 o x  elementos es con align-content:center;  que quedan centrados pero sus especios cerca 
+   no distribuidos por todo el espacio del contenedor y mas si el contenedor tiene un height de gran tamaño. 
+   entonces se usa cuando tenemos varias filas de elementos.
+
+   align-items:center; solo funciona para una sola fila de elementos
+
+  cuando usemos flex-direction: column;  usar siempre  justify-content:;  o tambien align-item: ; en especial center
+
+  align-content:space-around;  solo funciona cuando hay varias filas  con wrap
+
+ */
+ 
+align-content:center;   /* flex-start  flex-end   center   stretch   space-between  space-around  */
+
+
+ width:900px;
+ height: 990px;
+ background-color:orange;
+ padding: 30px;
+box-sizing: border-box;
+
+}
+
+.elemento{
+ 
+width:100px;
+height:80px;
+/*margin:0px auto; */
+position: relative;
+margin:5px;
+
+flex-grow: ;   
+
+/* flex-shrink: 1;     encoge los contenedores si le distes a todos un mayor tamaño de ancho */
+
+/* flex: flex-grow  flex-shrink  flex-basis    permite tres cantidades    flex:  1 2  350px ; */
+
+/* order: 1 ;   permite ordenar cada contenedor */
+
+/* align-self: flex-start  flex-end  center  stretch  baseline      sirve para alinear un elemento independiente de los demas cuando hay una fila */
+
+/* flex-flow: ;  
+
+Using the two values above with the flex-flow shorthand we get:
+flew-flow: row nowrap;
+ 
+flex-direction: column; flex-wrap: wrap;
+flex-flow: column wrap; */
+
+/*
+  flex-grow sirve para decirle cuanto queremos que el contenedor crezca a comparacion de otros contenedores
+lo usamos mas que todo con flex-direction:row;  y flex-wrap:no-wrap; align-items:;  para una sola fila */
+
+}
+
+#elemento1{
+
+	background-color:cadetblue;
+
+
+}
+
+#elemento1:hover {
+
+	background-color:cadetblue;
+
+
+}
+
+
+#elemento2{
+
+	background-color:red;
+ 
+
+}
+
+
+#elemento3{
+
+	background-color:pink;
+
+	
+}
+
+#elemento4{
+
+ background-color:black;
+ flex-basis: ;  /* sinonimo de width  y puede representar el alto el lo modifica en especial si usa flex-direction: column */
+
+}
+
+#elemento5{
+
+ background-color:grey;
+ flex-basis: ;  /* sinonimo de width  y puede representar el alto el lo modifica en especial si usa flex-direction: column */
+
+}
+
+#elemento6{
+
+ background-color:yellow;
+ flex-basis: ;  /* sinonimo de width  y puede representar el alto el lo modifica en especial si usa flex-direction: column */
+
+}
+
+#elemento7{
+
+ background-color:blue;
+ flex-basis: ;  /* sinonimo de width  y puede representar el alto el lo modifica en especial si usa flex-direction: column */
+
+}
+
+#elemento8{
+
+ background-color:chocolate;
+ flex-basis: ;  /* sinonimo de width  y puede representar el alto el lo modifica en especial si usa flex-direction: column */
+
+}
+
+#elemento9{
+
+ background-color:cyan;
+ flex-basis: ;  /* sinonimo de width  y puede representar el alto el lo modifica en especial si usa flex-direction: column */
+
+}
+
+#elemento10{
+
+ background-color:darkblue;
+ flex-basis: ;  /* sinonimo de width  y puede representar el alto el lo modifica en especial si usa flex-direction: column */
+
+}
+
+#elemento11{
+
+ background-color:darkred;
+ flex-basis: ;  /* sinonimo de width  y puede representar el alto el lo modifica en especial si usa flex-direction: column */
+  
+}
