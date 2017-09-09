@@ -4,7 +4,7 @@
  flex-direction: row;    /* row  column  row-reverse   column-reverse */
  flex-wrap: nowrap;    /* no-wrap  que no respeta el ancho de una caja dentro de un contenedor    wrap    wrap-reverse */
  /* flex-flow: column wrap; */
- justify-content: space-between;   /* flex-start   flex-end  center   space-around  space-between  */     
+ justify-content: space-between;   /* flex-start   flex-end  center   space-around  space-between  space-evenly */     
  /* flex-end solo para cuando hay un solo elemento en fila   pero cuando hay dos elementos en una fila la solucion es space-between */
 
  align-items:;  /* flex-start   flex-end  center  stretch  baseline */
